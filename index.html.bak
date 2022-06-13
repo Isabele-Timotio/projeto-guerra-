@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Spooky House</title>
-    
+    backgroud-image: url(/fundo/background.png);
   </head>
 
   <body>
