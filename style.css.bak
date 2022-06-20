@@ -9,7 +9,6 @@ html, body {
 	body {
 	  overflow: hidden;
 	  height: inherit;
-	  background-image:url(fundo.png);
 	}
 	
 	h1 {
@@ -20,7 +19,7 @@ html, body {
       top: -4px;
       right: 5px;
 
-      color: transparent;
+      color: red;
       text-shadow: 0 0 4px white;
 	}
 	
