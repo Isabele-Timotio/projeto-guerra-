@@ -12,7 +12,7 @@ class Bola {
    draw() {
       ctx.beginPath();
       ctx.fillStyle = this.color;
-      ctx.arc(this.x, this.y, this.size, 0, Math.PI);
+      ctx.arc(this.x, this.y, this.size, 0,2 *Math.PI);
 	  ctx.stroke();
       ctx.fill();
    }
@@ -48,7 +48,7 @@ class Bola {
             const distance = Math.sqrt(dx * dx + dy * dy);
 
             if (distance < this.size + bola.size) {
-              bola= this.color = randomRGB();
+              
             }
          }
       }

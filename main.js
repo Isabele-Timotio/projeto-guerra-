@@ -16,7 +16,7 @@ function random(min, max) {
 
 // gera uma cor aleatória
 function randomRGB() {
-  return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
+  return `rgb(255, 255, 255)`;
 }
 
 
@@ -28,8 +28,8 @@ while (bolas.length < 25) {
    const bola = new Bola(
       // posição de sempre uma bola de distância
       // fora das bordas para evitar erros de desenho
-      random(0 + size,width - size),
-      random(0 + size,height - size),
+      random(20 + size,50 - size),
+      random(20 + size,50 - size),
       random(-7,7),
       random(-7,7),
       randomRGB(),
@@ -42,7 +42,7 @@ while (bolas.length < 25) {
 
 //realiza um loop em todas as bolas geradas
 function loop() {
-   ctx.fillStyle = 'rgba(0, 0, 102, 0.25)';
+   ctx.fillStyle = 'rgba(0.1, 0.1, 0.1, 0.1)';
    ctx.fillRect(0, 0,  width, height);
 
    for (const bola of bolas) {
